@@ -28,6 +28,8 @@ yarn-error.log*
 *.user
 *.userosscache
 *.sln.docstates
+*.vsidx
+.vs/
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
