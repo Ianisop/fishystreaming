@@ -1,57 +1,100 @@
 .App {
     text-align: center;
- 
 }
 
 .App-body {
-    margin-top:25vmin;
     background-color: #1A1A1D;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
 }
 
-
-.App-logo {
-  height: 40vmin;
-  background-color:white;
-  border:solid;
-  border-width: 0.1EM;
-  pointer-events: none;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-scale infinite 0.34s linear;
-  }
-}
-
-
-
 .App-header {
-
 }
 
-
-
-.App-link {
-  color: #61dafb;
+.App-search-bar {
+    margin-bottom: 20px;
 }
 
-@keyframes App-logo-scale {
-    0% {
-        transform: scale(1, 1);
+.search-results-container {
+    position: relative;
+    align-content: center;
+}
+
+.search-results {
+    margin-inline: auto;
+}
+
+.song-result {
+    width: 100%;
+    height: 60px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: "Courier New", monospace;
+    color: #000;
+    background-color: #fff;
+    border: 4px solid #000;
+    border-radius: 0;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 8px 8px 0 #000;
+}
+
+    .song-result:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 12px 12px 0 #000;
     }
 
-    50% {
-        transform: scale(1.05, 1.05);
+    .song-result:active {
+        background-color: #000;
+        color: #fff;
+        border-color: #ffffff;
     }
 
-    100% {
-        transform: scale(1, 1);
+.input {
+    width: 100%;
+    max-width: 270px;
+    height: 60px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: "Courier New", monospace;
+    color: #000;
+    background-color: #fff;
+    border: 4px solid #000;
+    border-radius: 0;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 8px 8px 0 #000;
 }
+
+    .input::placeholder {
+        color: #888;
+    }
+
+    .input:hover {
+        transform: translate(-4px, -4px);
+        box-shadow: 12px 12px 0 #000;
+    }
+
+    .input:focus {
+        background-color: #000;
+        color: #fff;
+        border-color: #ffffff;
+    }
+
+.audio-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #1A1A1D;
+    padding: 10px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player {
+    width: 100%;
+    max-width: 300px;
+    border: 4px solid #000;
+    box-shadow: 8px 8px 0 #000;
+    outline: none;
+    background-color: #fff;
 }
