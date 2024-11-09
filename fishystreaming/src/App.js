@@ -5,13 +5,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h3>
-          Under Construction lololol
-        </h3>
+          </header>
+          <body className="App-body">
+              <img src={logo} className="App-logo" alt="logo" />
+              <h3>
+                  under construction lololol
+              </h3>
 
-      </header>
-    </div>
+          </body>
+      </div>
+
+     
   );
 }
 
